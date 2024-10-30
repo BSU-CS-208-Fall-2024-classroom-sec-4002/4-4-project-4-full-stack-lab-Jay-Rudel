@@ -2,7 +2,11 @@ doctype html
 link(rel='stylesheet' href='css/style.css')
 
 head
+    meta(charset="UTF-8")
     title My First Full Stack
 body
-    h1 Simple TODO APP
-    p TODO: Complete the app!
+    h1 Simplistic To-do List
+    p To add a new to-do task please enter below and click "Add"
+    form#todo-form(action="/add", method="POST")
+        input(type="text", name="todo", placeholder="Add a new todo item", required)
+        button(type="submit") Add
