@@ -10,3 +10,13 @@ body
     form#todo-form(action="/add", method="POST")
         input(type="text", name="todo", placeholder="Add a new todo item", required)
         button(type="submit") Add
+
+    h1 The List of Items 
+    p Here is your list of all things that you need to do
+
+    ul#todo-list
+        each task in tasks
+            li= task
+                form(action="/delete", method="POST", style="display:inline")
+                    input(type="hidden", name="task", value=task)
+                    button(type="submit") Delete
