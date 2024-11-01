@@ -1,3 +1,41 @@
 body{
+    background-color: purple;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    list-style-type: none;
+    padding: 2px;
+    color: white;
+}
+
+form{
+    margin-left: 10px;
+    padding: 2px;
     background-color: hotpink;
+    color: Black;
+}
+
+p{
+    color: white;
+    border: 2px, dashed, black;
+    border-radius: 6px;
+}
+
+input{
+  color: white;
+  background-color: black;  
+}
+
+h1{
+    color: white;
+    border-style: solid;
+    border-top-color: green;
+    border-bottom-color: green;
+    border-left-color: white;
+    border-right-color: white;
+    border-radius: 12px;
 }
